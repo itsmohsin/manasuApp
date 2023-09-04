@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:manasu/main_layout.dart';
+import 'package:manasu/screens/auth_page.dart';
 import 'package:manasu/utils/config.dart';
 
 void main() {
@@ -43,29 +45,10 @@ class MyApp extends StatelessWidget {
       routes: {
         // this is initial route of the application
         // which is the auth page (login and signup)
+        '/': (context) => const AuthPage(),
+        // this is for main layout after login
+        'main': (context) => const MainLayout()
       },
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({
-    super.key,
-  });
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true, // Align text center
-        title: const Text("Manasu App"),
-      ),
     );
   }
 }

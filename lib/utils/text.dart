@@ -8,7 +8,7 @@ class AppText {
     'register_text':
         'You can easilly sign up, and connect to the Doctors nearby',
     'signUp_text': 'Don\'t have an account?',
-    'social-login': 'Or continue with social account',
+    'social_login': 'Or continue with social account',
     'forgot_password': 'Forgot your password?',
   };
 }
