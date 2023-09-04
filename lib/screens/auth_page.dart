@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:manasu/components/login_form.dart';
+import 'package:manasu/components/social_button.dart';
 import 'package:manasu/utils/config.dart';
 import 'package:manasu/utils/text.dart';
 
@@ -42,7 +43,7 @@ class _AuthPageState extends State<AuthPage> {
               ),
             ),
             Config.spaceSmall,
-            LoginForm(), // login components
+            const LoginForm(), // login components
             Config.spaceSmall,
             Center(
               child: TextButton(
@@ -57,6 +58,48 @@ class _AuthPageState extends State<AuthPage> {
                 ),
               ),
             ),
+            // add social button sign in
+            const Spacer(),
+            Center(
+              child: Text(
+                AppText.enText['social_login']!,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                  color: Colors.grey.shade500,
+                ),
+              ),
+            ),
+            Config.spaceSmall,
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                SocialButton(social: 'google'),
+                SocialButton(social: 'facebook'),
+              ],
+            ),
+            Config.spaceSmall,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  AppText.enText['signUp_text']!,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey.shade500,
+                  ),
+                ),
+                const Text(
+                  ' Sign Up',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),

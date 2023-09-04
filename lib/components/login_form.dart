@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manasu/components/button.dart';
 import 'package:manasu/utils/config.dart';
 
 class LoginForm extends StatefulWidget {
@@ -61,6 +62,12 @@ class _LoginFormState extends State<LoginForm> {
           ),
           Config.spaceSmall,
           // login button
+          Button(
+            width: double.infinity,
+            title: 'Sign In',
+            onPressed: () {},
+            disabled: false,
+          ),
         ],
       ),
     );
