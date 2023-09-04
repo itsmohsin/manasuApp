@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:manasu/components/appointment_card.dart';
 import 'package:manasu/utils/config.dart';
 
 class HomePage extends StatefulWidget {
@@ -127,7 +128,12 @@ class _HomePageState extends State<HomePage> {
               ),
               Config.spaceSmall,
               // display appointment card here
-              // let's create appointment card widget
+              const AppointmentCard(),
+              Config.spaceSmall,
+              const Text(
+                'Top Doctors',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ),
