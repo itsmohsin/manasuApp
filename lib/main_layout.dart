@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:manasu/screens/appointment_page.dart';
+import 'package:manasu/screens/home_page.dart';
 
 class MainLayout extends StatefulWidget {
   const MainLayout({super.key});
@@ -17,12 +19,16 @@ class _MainLayoutState extends State<MainLayout> {
     return Scaffold(
       body: PageView(
         controller: _page,
-        onPageChanged: (value) {
+        onPageChanged: ((value) {
           setState(() {
             // update page index when tab pressed or switching pages
             currentPage = value;
           });
-        },
+        }),
+        children: const <Widget>[
+          HomePage(),
+          AppointmentPage(),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentPage,

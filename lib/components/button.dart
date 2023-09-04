@@ -11,7 +11,7 @@ class Button extends StatelessWidget {
 
   final double width;
   final String title;
-  final bool disable;
+  final bool disable; // this is used to disable button
   final Function() onPressed;
 
   @override
