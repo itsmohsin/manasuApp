@@ -6,12 +6,12 @@ class Button extends StatelessWidget {
       {super.key,
       required this.width,
       required this.title,
-      required this.disabled,
+      required this.disable,
       required this.onPressed});
 
   final double width;
   final String title;
-  final bool disabled;
+  final bool disable;
   final Function() onPressed;
 
   @override
@@ -23,7 +23,7 @@ class Button extends StatelessWidget {
           backgroundColor: Config.primaryColor,
           foregroundColor: Colors.white,
         ),
-        onPressed: disabled ? null : () => onPressed,
+        onPressed: disable ? null : onPressed,
         child: Text(
           title,
           style: const TextStyle(
