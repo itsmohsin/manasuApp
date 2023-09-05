@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:manasu/main_layout.dart';
 import 'package:manasu/screens/auth_page.dart';
+import 'package:manasu/screens/doctor_details.dart';
 import 'package:manasu/utils/config.dart';
 
 void main() {
@@ -47,7 +48,9 @@ class MyApp extends StatelessWidget {
         // which is the auth page (login and signup)
         '/': (context) => const AuthPage(),
         // this is for main layout after login
-        'main': (context) => const MainLayout()
+        'main': (context) => const MainLayout(),
+        // this is for doctor details page
+        'doc_details': (context) => const DoctorDetails(),
       },
     );
   }

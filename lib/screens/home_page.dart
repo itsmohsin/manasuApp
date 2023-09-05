@@ -140,7 +140,9 @@ class _HomePageState extends State<HomePage> {
                 // list of top doctos
                 Column(
                   children: List.generate(10, (index) {
-                    return const DoctorCard();
+                    return const DoctorCard(
+                      route: 'doc_details',
+                    );
                   }),
                 )
               ],

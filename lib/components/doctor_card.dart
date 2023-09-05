@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:manasu/utils/config.dart';
 
-class DoctorCard extends StatefulWidget {
-  const DoctorCard({super.key});
+class DoctorCard extends StatelessWidget {
+  const DoctorCard({super.key, required this.route});
 
-  @override
-  State<DoctorCard> createState() => _DoctorCardState();
-}
+  final String route;
 
-class _DoctorCardState extends State<DoctorCard> {
   @override
   Widget build(BuildContext context) {
     Config().init(context);
@@ -72,7 +69,10 @@ class _DoctorCardState extends State<DoctorCard> {
             ],
           ),
         ),
-        onTap: () {}, // Navigate to Doctor Details Page
+        onTap: () {
+          // Redirect to Doctor Details Page
+          Navigator.of(context).pushNamed(route);
+        },
       ),
     );
   }
