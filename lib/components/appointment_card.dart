@@ -149,4 +149,4 @@ class _ScheduleCardState extends State<ScheduleCard> {
 }
 
 // Done with Appointment Card.
-// the information / data will be replaced by API data after Database setup.
+// the information/data will be replaced by API data after Database setup.
