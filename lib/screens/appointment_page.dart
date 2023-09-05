@@ -18,7 +18,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
     {
       'doctor_name': 'Abhilash N',
       'doctor_profile': 'assets/man.png',
-      'category': 'General',
+      'category': 'General Surgeon',
       'status': FilterStatus.upcoming,
     },
     {
@@ -30,7 +30,7 @@ class _AppointmentPageState extends State<AppointmentPage> {
     {
       'doctor_name': 'Mayank',
       'doctor_profile': 'assets/man.png',
-      'category': 'General',
+      'category': 'General Surgeon',
       'status': FilterStatus.complete,
     },
     {

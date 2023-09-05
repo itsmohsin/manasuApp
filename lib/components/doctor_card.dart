@@ -32,13 +32,13 @@ class DoctorCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Dr Neetu',
+                      'Dr Abhilash N',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text('Dental',
+                    Text('General Surgeon',
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.normal,

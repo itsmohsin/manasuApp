@@ -43,7 +43,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                         height: 2,
                       ),
                       Text(
-                        'General',
+                        'General Surgeon',
                         style: TextStyle(color: Colors.black),
                       ),
                     ],
