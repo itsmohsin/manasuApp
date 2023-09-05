@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:manasu/main_layout.dart';
 import 'package:manasu/screens/auth_page.dart';
+import 'package:manasu/screens/booking_page.dart';
 import 'package:manasu/screens/doctor_details.dart';
 import 'package:manasu/utils/config.dart';
 
@@ -51,6 +52,8 @@ class MyApp extends StatelessWidget {
         'main': (context) => const MainLayout(),
         // this is for doctor details page
         'doc_details': (context) => const DoctorDetails(),
+        // thi is for booking page
+        'booking_page': (context) => const BookingPage(),
       },
     );
   }

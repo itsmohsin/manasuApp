@@ -44,12 +44,15 @@ class _DoctorDetailsState extends State<DoctorDetails> {
             const DetailBody(),
             const Spacer(),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(15),
               child: Button(
                 width: double.infinity,
                 title: 'Book Appointment',
                 disable: false,
-                onPressed: () {},
+                onPressed: () {
+                  // navigate to booking page
+                  Navigator.of(context).pushNamed('booking_page');
+                },
               ),
             ),
           ],
@@ -79,7 +82,7 @@ class AboutDoctor extends StatelessWidget {
             'Dr Abhilash N',
             style: TextStyle(
               color: Colors.black,
-              fontSize: 20.0,
+              fontSize: 24.0,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -131,7 +134,7 @@ class DetailBody extends StatelessWidget {
           Config.spaceSmall,
           // doctor experience, patient and ratings
           const DoctorInfo(),
-          Config.spaceMedium,
+          Config.spaceSmall,
           const Text(
             'About Doctor',
             style: TextStyle(fontWeight: FontWeight.w600),
@@ -198,7 +201,7 @@ class InfoCard extends StatelessWidget {
           color: Config.primaryColor,
         ),
         padding: const EdgeInsets.symmetric(
-          vertical: 15,
+          vertical: 20,
           horizontal: 15,
         ),
         child: Column(
